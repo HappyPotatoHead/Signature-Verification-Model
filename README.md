@@ -1,12 +1,12 @@
 <a id="readme-top"></a>
 
 [![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![project_license][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
+<!-- [![Forks][forks-shield]][forks-url] -->
+<!-- [![Stargazers][stars-shield]][stars-url] -->
 
 <!-- PROJECT LOGO -->
 <br />
@@ -217,9 +217,6 @@ Project Link: [Signature-Verification-Model](https://github.com/HappyPotatoHead/
 
 [issues-shield]: https://img.shields.io/github/issues/HappyPotatoHead/Signature-Verification-Model.svg?style=for-the-badge
 [issues-url]: https://github.com/HappyPotatoHead/Signature-Verification-Model/issues
-
-[license-shield]: https://img.shields.io/github/license/HappyPotatoHead/Signature-Verification-Model.svg?style=for-the-badge
-[license-url]: https://github.com/HappyPotatoHead/Signature-Verification-Model/blob/main/LICENSE
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/jimmy-ding
