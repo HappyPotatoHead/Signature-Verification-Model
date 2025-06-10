@@ -1,0 +1,10 @@
+kagglehub
+opencv-contrib-python
+numpy
+pathlib
+matplotlib
+scikit-learn
+matplotlib
+seaborn
+plotly
+Pillow
