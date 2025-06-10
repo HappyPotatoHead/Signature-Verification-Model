@@ -219,7 +219,7 @@ Project Link: [Signature-Verification-Model](https://github.com/HappyPotatoHead/
 [issues-url]: https://github.com/HappyPotatoHead/Signature-Verification-Model/issues
 
 [license-shield]: https://img.shields.io/github/license/HappyPotatoHead/Signature-Verification-Model.svg?style=for-the-badge
-[license-url]: https://github.com/HappyPotatoHead/Signature-Verification-Model/blob/master/LICENSE
+[license-url]: https://github.com/HappyPotatoHead/Signature-Verification-Model/blob/main/LICENSE
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/jimmy-ding
