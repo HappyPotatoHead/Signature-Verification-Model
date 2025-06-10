@@ -1,7 +1,8 @@
 <a id="readme-top"></a>
 
 [![Contributors][contributors-shield]][contributors-url]
-
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![project_license][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
@@ -207,16 +208,22 @@ Project Link: [Signature-Verification-Model](https://github.com/HappyPotatoHead/
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/HappyPotatoHead/Signature-Verification-Model.svg?style=for-the-badge
 [contributors-url]: https://github.com/HappyPotatoHead/Signature-Verification-Model/graphs/contributors
+
 [forks-shield]: https://img.shields.io/github/forks/HappyPotatoHead/Signature-Verification-Model.svg?style=for-the-badge
 [forks-url]: https://github.com/HappyPotatoHead/Signature-Verification-Model/network/members
+
 [stars-shield]: https://img.shields.io/github/stars/HappyPotatoHead/Signature-Verification-Model.svg?style=for-the-badge
 [stars-url]: https://github.com/HappyPotatoHead/Signature-Verification-Model/stargazers
+
 [issues-shield]: https://img.shields.io/github/issues/HappyPotatoHead/Signature-Verification-Model.svg?style=for-the-badge
 [issues-url]: https://github.com/HappyPotatoHead/Signature-Verification-Model/issues
+
 [license-shield]: https://img.shields.io/github/license/HappyPotatoHead/Signature-Verification-Model.svg?style=for-the-badge
 [license-url]: https://github.com/HappyPotatoHead/Signature-Verification-Model/blob/master/LICENSE.txt
+
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/jimmy-ding
+
 [product-screenshot]: images/screenshot.png
 
 [Python]: https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff
