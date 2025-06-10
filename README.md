@@ -18,8 +18,7 @@
 <h3 align="center">Signature Verification Model</h3>
 
   <p align="center">
-    This project aimed to develop a model to efficiently verifying handwritten signatures. <br>The challenge was to accurately compare scanned or captured signatures against known samples, even with variations in style and quality. 
-    <br>With this model, the process of verifying valid signatures can be significantly shorter and less tedious.
+    Because my eyes hurt
     <br />
     <a href="https://github.com/HappyPotatoHead/Signature-Verification-Model"><strong>Explore the docs »</strong></a>
     <br />
@@ -52,18 +51,15 @@
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+This project aimed to develop a model to automate the verification of handwritten signatures. The challenge was to accurately compare scanned or captured signatures against known samples, even with variations in style and quality. By utilising a model, the process of verifying valid signatures can be significantly shorter and less tedious.
 
-Here's a blank template to get started. To avoid retyping too much info, do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`, `project_license`
-
-<p align="right"><a href="#readme-top">back to top</a></p>
+<p align="right"><a href="#readme-top">Back To Top</a></p>
 
 
 
@@ -74,7 +70,7 @@ Here's a blank template to get started. To avoid retyping too much info, do a se
 * [![NumPy][NumPy]][NumPy]
 * [![Matplotlib][Matplotlib]][Matplotlib-url]
 
-<p align="right"><a href="#readme-top">back to top</a></p>
+<p align="right"><a href="#readme-top">Back To Top</a></p>
 
 
 <!-- GETTING STARTED -->
@@ -103,16 +99,22 @@ git remote set-url origin HappyPotatoHead/Signature-Verification-Model
 git remote -v # confirm the changes
 ```
 
-<p align="right"><a href="#readme-top">back to top</a></p>
+<p align="right"><a href="#readme-top">Back To Top</a></p>
 
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-> Using the notebook is rather straightforward, so I will mainly cover the parts that you can *play around with*.
+> Using the notebook is rather straightforward - I have arranged and ordered the cells in a logical order, so I will mainly cover the parts that you can *play around with* and what you should look out for. 
+>
+>Check out [The Garden](https://happypotatohead.github.io/project-garden/AI--and--Deep-Learning/Offline-Signature-Verification-System) to learn more!
 
-Check out [The Garden](https://happypotatohead.github.io/project-garden/AI--and--Deep-Learning/Offline-Signature-Verification-System) to learn more!
+I have provided a [sample model](https://drive.google.com/drive/folders/19Xu-Hgjdd62Sjq2RQoIWAeZ0aMTHTERz?usp=drive_link). If you would like to skip training, you can run the configuration dictionaries and the classes and start executing from **Model Evaluation** onwards. Have fun!
+
+To access the signature images: [Click me!](https://drive.google.com/drive/folders/1YbAjjXCEQwvv7jknDRO2xIKsmtC-Quyj?usp=drive_link)
+
+### Configurable Code
 
 Modify the **Configurations** section to control the training of the model.
 
@@ -126,16 +128,27 @@ Proceed to **Define Transforms** section to define transformers.
 
 ![Transformers' definition](images/define_transformers.png)
 
-<p align="right"><a href="#readme-top">back to top</a></p>
+### K-Fold Cross Validation
+
+By default, my definition of k-fold cross validation does not make checkpoints. 
+
+![K-Fold does not make checkpoints by default](images/k_fold_no_checkpoint.png)
+
+### Evaluation
+
+To evaluate the model on a dataset, the dataset has to be an instance of `TestingSignatureDataset` due to the difference in design between `TrainingSignatureDataset` and `TestingSignatureDataset`. So, you cannot reuse the training dataset instiated with `TrainingSignatureDataset`. 
+
+
+<p align="right"><a href="#readme-top">Back To Top</a></p>
 
 
 
 <!-- ROADMAP -->
 ## Roadmap
-
+ 
 See the [open issues](https://github.com/HappyPotatoHead/Signature-Verification-Model/issues) for a full list of proposed features (and known issues).
 
-<p align="right"><a href="#readme-top">back to top</a></p>
+<p align="right"><a href="#readme-top">Back To Top</a></p>
 
 
 
@@ -153,7 +166,7 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right"><a href="#readme-top">back to top</a></p>
+<p align="right"><a href="#readme-top">Back To Top</a></p>
 
 ### Top contributors:
 
@@ -166,7 +179,7 @@ Don't forget to give the project a star! Thanks again!
 
 Distributed under the project_license. See `LICENSE.txt` for more information.
 
-<p align="right"><a href="#readme-top">back to top</a></p>
+<p align="right"><a href="#readme-top">Back To Top</a></p>
 
 
 
@@ -177,7 +190,7 @@ Jimmy Ding - jimmydingjk@gmail.com
 
 Project Link: [Signature-Verification-Model](https://github.com/HappyPotatoHead/Signature-Verification-Model)
 
-<p align="right"><a href="#readme-top">back to top</a></p>
+<p align="right"><a href="#readme-top">Back To Top</a></p>
 
 
 
@@ -194,7 +207,7 @@ Project Link: [Signature-Verification-Model](https://github.com/HappyPotatoHead/
 [license-shield]: https://img.shields.io/github/license/HappyPotatoHead/Signature-Verification-Model.svg?style=for-the-badge
 [license-url]: https://github.com/HappyPotatoHead/Signature-Verification-Model/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
+[linkedin-url]: https://linkedin.com/in/jimmy-ding
 [product-screenshot]: images/screenshot.png
 
 [Python]: https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff
