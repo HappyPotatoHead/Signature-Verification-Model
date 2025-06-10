@@ -11,27 +11,24 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://github.com/HappyPotatoHead/Signature-Verification-Model">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Signature Verification Model</h3>
 
   <p align="center">
-    project_description
+    This project aimed to develop a model to efficiently verifying handwritten signatures. <br>The challenge was to accurately compare scanned or captured signatures against known samples, even with variations in style and quality. 
+    <br>With this model, the process of verifying valid signatures can be significantly shorter and less tedious.
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/HappyPotatoHead/Signature-Verification-Model"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://github.com/HappyPotatoHead/Signature-Verification-Model">View Demo</a>
     &middot;
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
-    &middot;
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/HappyPotatoHead/Signature-Verification-Model/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
   </p>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -59,8 +56,6 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
@@ -68,86 +63,79 @@
 
 Here's a blank template to get started. To avoid retyping too much info, do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`, `project_license`
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 
 
 ### Built With
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![Python][Python]][Python-url]
+* [![PyTorch][PyTorch]][PyTorch-url]
+* [![NumPy][NumPy]][NumPy]
+* [![Matplotlib][Matplotlib]][Matplotlib-url]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+Install the libraries listed in `requirements.txt`. The version of PyTorch used can be found in the [notebook](https://github.com/HappyPotatoHead/Signature-Verification-Model/blob/main/resnet_model.ipynb)
+
+* Python
   ```sh
-  npm install npm@latest -g
+  pip install -r requirements.txt
   ```
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin github_username/repo_name
-   git remote -v # confirm the changes
-   ```
+Just clone the repository and you are good to go!
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+```sh
+git clone https://github.com/HappyPotatoHead/Signature-Verification-Model.git
+```
+
+Change git remote url to avoid accidental pushes to base project
+```sh
+git remote set-url origin HappyPotatoHead/Signature-Verification-Model
+git remote -v # confirm the changes
+```
+
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+> Using the notebook is rather straightforward, so I will mainly cover the parts that you can *play around with*.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+Check out [The Garden](https://happypotatohead.github.io/project-garden/AI--and--Deep-Learning/Offline-Signature-Verification-System) to learn more!
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Modify the **Configurations** section to control the training of the model.
+
+![Notebook Setup and Configurations](images/configurations.png)
+
+`build_feature_extraction_model()` and `build_batch_triplet_loss` are used to define the model and the triplet loss function. 
+
+![Model builder](images/model_builder.png) ![alt text](images/loss_function_builder.png)
+
+Proceed to **Define Transforms** section to define transformers. 
+
+![Transformers' definition](images/define_transformers.png)
+
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 
 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+See the [open issues](https://github.com/HappyPotatoHead/Signature-Verification-Model/issues) for a full list of proposed features (and known issues).
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 
 
@@ -165,44 +153,31 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 ### Top contributors:
 
-<a href="https://github.com/github_username/repo_name/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=github_username/repo_name" alt="contrib.rocks image" />
+<a href="https://github.com/HappyPotatoHead/Signature-Verification-Model/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=HappyPotatoHead/Signature-Verification-Model" alt="contrib.rocks image" />
 </a>
-
-
 
 <!-- LICENSE -->
 ## License
 
 Distributed under the project_license. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Jimmy Ding - jimmydingjk@gmail.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [Signature-Verification-Model](https://github.com/HappyPotatoHead/Signature-Verification-Model)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 
 
@@ -210,30 +185,29 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/HappyPotatoHead/Signature-Verification-Model.svg?style=for-the-badge
 [contributors-url]: https://github.com/HappyPotatoHead/Signature-Verification-Model/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[forks-shield]: https://img.shields.io/github/forks/HappyPotatoHead/Signature-Verification-Model.svg?style=for-the-badge
+[forks-url]: https://github.com/HappyPotatoHead/Signature-Verification-Model/network/members
+[stars-shield]: https://img.shields.io/github/stars/HappyPotatoHead/Signature-Verification-Model.svg?style=for-the-badge
+[stars-url]: https://github.com/HappyPotatoHead/Signature-Verification-Model/stargazers
+[issues-shield]: https://img.shields.io/github/issues/HappyPotatoHead/Signature-Verification-Model.svg?style=for-the-badge
+[issues-url]: https://github.com/HappyPotatoHead/Signature-Verification-Model/issues
+[license-shield]: https://img.shields.io/github/license/HappyPotatoHead/Signature-Verification-Model.svg?style=for-the-badge
+[license-url]: https://github.com/HappyPotatoHead/Signature-Verification-Model/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
+
+[Python]: https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff
+[Python-url]: https://www.python.org/
+
+[Matplotlib]: https://custom-icon-badges.demolab.com/badge/Matplotlib-71D291?logo=matplotlib&logoColor=fff
+[Matplotlib-url]: https://matplotlib.org/
+
+[NumPy]: https://img.shields.io/badge/NumPy-4DABCF?logo=numpy&logoColor=fff
+[NumPy-url]: https://numpy.org/
+
+[PyTorch]: https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white
+[PyTorch-url]: https://docs.pytorch.org/docs/stable/index.html
+
+[Scikit-learn]: https://img.shields.io/badge/-scikit--learn-%23F7931E?logo=scikit-learn&logoColor=white
+[Scikit-learn]: https://scikit-learn.org/stable/
