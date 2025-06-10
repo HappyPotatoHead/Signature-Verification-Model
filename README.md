@@ -110,13 +110,23 @@ git remote -v # confirm the changes
 >
 >Check out [The Garden](https://happypotatohead.github.io/project-garden/AI--and--Deep-Learning/Offline-Signature-Verification-System) to learn more!
 
-I have provided a [sample model](https://drive.google.com/drive/folders/19Xu-Hgjdd62Sjq2RQoIWAeZ0aMTHTERz?usp=drive_link). If you would like to skip training, you can run the configuration dictionaries and the classes and start executing from **Model Evaluation** onwards. Have fun!
+I have provided a [sample model](https://drive.google.com/drive/folders/19Xu-Hgjdd62Sjq2RQoIWAeZ0aMTHTERz?usp=drive_link). If you would like to skip fine-tuning, you can run the configuration dictionaries and the classes and start executing from **Model Evaluation** onwards. Have fun!
 
 To access the signature images: [Click me!](https://drive.google.com/drive/folders/1YbAjjXCEQwvv7jknDRO2xIKsmtC-Quyj?usp=drive_link)
 
-### Configurable Code
+### Image preprocessing
 
-Modify the **Configurations** section to control the training of the model.
+The *processing_images* folder contains the file necessary to fetch, load, and process the signature images; however, a naming function has yet to be implemented. 
+
+For the fine-tuning of model to work, the images' names should be as follows:
+ 
+*\<original/forgeries>\_\<signer's id>\_\<image's index>*
+
+### Model
+
+####  Configurable Code
+
+Modify the **Configurations** section to control the fine-tuning of the model.
 
 ![Notebook Setup and Configurations](images/configurations.png)
 
@@ -128,13 +138,13 @@ Proceed to **Define Transforms** section to define transformers.
 
 ![Transformers' definition](images/define_transformers.png)
 
-### K-Fold Cross Validation
+#### K-Fold Cross Validation
 
 By default, my definition of k-fold cross validation does not make checkpoints. 
 
 ![K-Fold does not make checkpoints by default](images/k_fold_no_checkpoint.png)
 
-### Evaluation
+#### Evaluation
 
 To evaluate the model on a dataset, the dataset has to be an instance of `TestingSignatureDataset` due to the difference in design between `TrainingSignatureDataset` and `TestingSignatureDataset`. So, you cannot reuse the training dataset instiated with `TrainingSignatureDataset`. 
 
