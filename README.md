@@ -80,10 +80,9 @@ This project aimed to develop a model to automate the verification of handwritte
 
 Install the libraries listed in `requirements.txt`. The version of PyTorch used can be found in the [notebook](https://github.com/HappyPotatoHead/Signature-Verification-Model/blob/main/resnet_model.ipynb)
 
-* Python
-  ```sh
-  pip install -r requirements.txt
-  ```
+```sh
+pip install -r requirements.txt
+```
 
 ### Installation
 
