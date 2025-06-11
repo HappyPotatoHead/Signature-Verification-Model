@@ -155,7 +155,7 @@ To evaluate the model on a dataset, the dataset has to be an instance of `Testin
 <!-- ROADMAP -->
 ## Roadmap
 
-* [] Hyperparameter tuning automation with Ray Tune
+- [] Hyperparameter tuning automation with Ray Tune
  
 See the [open issues](https://github.com/HappyPotatoHead/Signature-Verification-Model/issues) for a full list of proposed features (and known issues).
 
