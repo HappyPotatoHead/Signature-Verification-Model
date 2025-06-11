@@ -108,7 +108,7 @@ git remote -v # confirm the changes
 
 > Using the notebook is rather straightforward - I have arranged and ordered the cells in a logical order, so I will mainly cover the parts that you can *play around with* and what you should look out for. 
 >
->Check out [The Garden](https://happypotatohead.github.io/project-garden/AI--and--Deep-Learning/Offline-Signature-Verification-System) to learn more!
+>Check out [The Garden](https://happypotatohead.github.io/project-garden/AI--and--Deep-Learning/Offline-Signature-Verification) to learn more!
 
 I have provided a [sample model](https://drive.google.com/drive/folders/19Xu-Hgjdd62Sjq2RQoIWAeZ0aMTHTERz?usp=drive_link). If you would like to skip fine-tuning, you can run the configuration dictionaries and the classes and start executing from **Model Evaluation** onwards. Have fun!
 
@@ -146,7 +146,7 @@ By default, my definition of k-fold cross validation does not make checkpoints.
 
 #### Evaluation
 
-To evaluate the model on a dataset, the dataset has to be an instance of `TestingSignatureDataset` due to the difference in design between `TrainingSignatureDataset` and `TestingSignatureDataset`. So, you cannot reuse the training dataset instiated with `TrainingSignatureDataset`. 
+To evaluate the model on a dataset, the dataset has to be an instance of `TestingSignatureDataset` due to the difference in design between `TrainingSignatureDataset` and `TestingSignatureDataset`. So, you cannot reuse the training dataset instantiated with `TrainingSignatureDataset`. 
 
 
 <p align="right"><a href="#readme-top">Back To Top</a></p>
